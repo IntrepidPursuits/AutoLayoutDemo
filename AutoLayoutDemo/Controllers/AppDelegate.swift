@@ -11,4 +11,13 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
+
+    func applicationDidFinishLaunching(application: UIApplication) {
+        let window = UIWindow(frame: UIScreen.mainScreen().bounds);
+        let rootViewController = ALRootVIewController()
+        window.rootViewController = rootViewController
+        window.makeKeyAndVisible()
+        self.window = window
+    }
+
 }
