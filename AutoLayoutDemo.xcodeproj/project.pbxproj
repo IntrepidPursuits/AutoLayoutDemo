@@ -11,7 +11,7 @@
 		1EBF0B6323FC7E628852E733 /* LaunchScreen.xib in Sources */ = {isa = PBXBuildFile; fileRef = 0FEFB1060BC1878178CA633D /* LaunchScreen.xib */; };
 		33EC99E53DF476E306184EA0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BF711551780CC1023B818B7 /* Images.xcassets */; };
 		43DD62C87658BB893376A014 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89D708FDD0187D9EA8ED51FA /* Foundation.framework */; };
-		9D1B333DA89B8A4CE9793E72 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0009D2F3B6F1410A22A4E6B /* Pods.framework */; };
+		C7562741D8E5D170B5A0B208 /* Pods_AutoLayoutDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D7BB0B4C73E1E64C0A3FA4F /* Pods_AutoLayoutDemo.framework */; };
 		D99E51E51CF8D11900B8E405 /* ALMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99E51E31CF8D11900B8E405 /* ALMenuViewController.swift */; };
 		D99E51E61CF8D11900B8E405 /* ALMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D99E51E41CF8D11900B8E405 /* ALMenuViewController.xib */; };
 		D99E51EA1CF8D13300B8E405 /* ALPromptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99E51E81CF8D13300B8E405 /* ALPromptViewController.swift */; };
@@ -36,15 +36,16 @@
 		01DBECF09ECC791F882F7CBA /* UnitTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
 		0FEFB1060BC1878178CA633D /* LaunchScreen.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		3FE4D5EF4ECB8C4C167DDBF1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A8D2832179BD75DCD73B475 /* Pods-AutoLayoutDemo.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoLayoutDemo.staging.xcconfig"; path = "Pods/Target Support Files/Pods-AutoLayoutDemo/Pods-AutoLayoutDemo.staging.xcconfig"; sourceTree = "<group>"; };
 		52126C262FE01ADD87602763 /* AutoLayoutDemo-Debug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AutoLayoutDemo-Debug.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		59DE4CB40CD18E386307DE3B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		5BF711551780CC1023B818B7 /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		89D708FDD0187D9EA8ED51FA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		986F3DEBB7D39DA9D82F0F52 /* AutoLayoutDemo-Debug.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AutoLayoutDemo-Debug.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C70EE12EC95E718290924C8F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		9D7BB0B4C73E1E64C0A3FA4F /* Pods_AutoLayoutDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoLayoutDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0FA2681E1D5029802B2DE17 /* Pods-AutoLayoutDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoLayoutDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AutoLayoutDemo/Pods-AutoLayoutDemo.release.xcconfig"; sourceTree = "<group>"; };
+		BEFD45FD22EA862E3D11632F /* Pods-AutoLayoutDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoLayoutDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AutoLayoutDemo/Pods-AutoLayoutDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		CE966D0D512B72C5A3914DB7 /* AppDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0009D2F3B6F1410A22A4E6B /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D8372E4D65FCAA4205681B0A /* Pods.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.staging.xcconfig; path = "Pods/Target Support Files/Pods/Pods.staging.xcconfig"; sourceTree = "<group>"; };
 		D99E51E31CF8D11900B8E405 /* ALMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ALMenuViewController.swift; path = Menu/ALMenuViewController.swift; sourceTree = "<group>"; };
 		D99E51E41CF8D11900B8E405 /* ALMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ALMenuViewController.xib; path = Menu/ALMenuViewController.xib; sourceTree = "<group>"; };
 		D99E51E81CF8D13300B8E405 /* ALPromptViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ALPromptViewController.swift; path = Prompt/ALPromptViewController.swift; sourceTree = "<group>"; };
@@ -68,7 +69,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43DD62C87658BB893376A014 /* Foundation.framework in Frameworks */,
-				9D1B333DA89B8A4CE9793E72 /* Pods.framework in Frameworks */,
+				C7562741D8E5D170B5A0B208 /* Pods_AutoLayoutDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,16 +82,6 @@
 				D99E51F11CF8E20200B8E405 /* Menu */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		0AA400093E2CD442046AD5A2 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				C70EE12EC95E718290924C8F /* Pods.release.xcconfig */,
-				D8372E4D65FCAA4205681B0A /* Pods.staging.xcconfig */,
-				59DE4CB40CD18E386307DE3B /* Pods.debug.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		360C351F2081B9C6EEDC4A5F /* Resources */ = {
@@ -122,7 +113,7 @@
 				EF69BF8169E862B22F055D48 /* UnitTests */,
 				94B66835FAD462AA334460DB /* Frameworks */,
 				6C79F3F3E8B0B08EF5C908DF /* Products */,
-				0AA400093E2CD442046AD5A2 /* Pods */,
+				A002173FF5D3F24C9A43BAEE /* Pods */,
 			);
 			indentWidth = 4;
 			sourceTree = "<group>";
@@ -201,6 +192,7 @@
 			children = (
 				856B898612639A4AF5B22985 /* iOS */,
 				D0009D2F3B6F1410A22A4E6B /* Pods.framework */,
+				9D7BB0B4C73E1E64C0A3FA4F /* Pods_AutoLayoutDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -211,6 +203,16 @@
 				3FE4D5EF4ECB8C4C167DDBF1 /* Info.plist */,
 			);
 			path = "Other-Sources";
+			sourceTree = "<group>";
+		};
+		A002173FF5D3F24C9A43BAEE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B0FA2681E1D5029802B2DE17 /* Pods-AutoLayoutDemo.release.xcconfig */,
+				4A8D2832179BD75DCD73B475 /* Pods-AutoLayoutDemo.staging.xcconfig */,
+				BEFD45FD22EA862E3D11632F /* Pods-AutoLayoutDemo.debug.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		C7B9659A22F55274CB59A3EF /* Helpers */ = {
@@ -287,14 +289,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 032A17F08D4F3686BF48908F /* Build configuration list for PBXNativeTarget "AutoLayoutDemo" */;
 			buildPhases = (
-				42E3F38F68B52E6836990D5A /* Check Pods Manifest.lock */,
+				4BBC7CCA77B574238FA893D4 /* 📦 Check Pods Manifest.lock */,
 				CE5A3935F2A09E80F3F830E8 /* Sources */,
 				65F5865AE7FFCF278058D67C /* Frameworks */,
 				0B62953C454FB72507B28A8B /* Resources */,
 				411A4E2C6488E51F7FAEEEFE /* Warn for TODO and FIXME comments */,
 				B67731B53501107EACE7BCDF /* Objective-Clean */,
-				CA698DB4F523AF3BEB84D155 /* Embed Pods Frameworks */,
-				1C0B2D313E300E947E0EEE35 /* Copy Pods Resources */,
+				6872935F581493DC402ED79B /* 📦 Embed Pods Frameworks */,
+				0F2D6185B924190493C7271D /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -375,19 +377,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1C0B2D313E300E947E0EEE35 /* Copy Pods Resources */ = {
+		0F2D6185B924190493C7271D /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AutoLayoutDemo/Pods-AutoLayoutDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		411A4E2C6488E51F7FAEEEFE /* Warn for TODO and FIXME comments */ = {
@@ -404,19 +406,34 @@
 			shellPath = /bin/sh;
 			shellScript = "KEYWORDS=\"TODO:|FIXME:|\\?\\?\\?:|\\!\\!\\!:\"\nFILE_EXTENSIONS=\"swift|h|m|mm|c|cpp\"\nfind -E \"${SRCROOT}\" -ipath \"${SRCROOT}/Carthage\" -o -ipath \"${SRCROOT}/pods\" -prune -o \\( -regex \".*\\.($FILE_EXTENSIONS)$\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($KEYWORDS).*\\$\" | perl -p -e \"s/($KEYWORDS)/ warning: \\$1/\"\n";
 		};
-		42E3F38F68B52E6836990D5A /* Check Pods Manifest.lock */ = {
+		4BBC7CCA77B574238FA893D4 /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6872935F581493DC402ED79B /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AutoLayoutDemo/Pods-AutoLayoutDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B67731B53501107EACE7BCDF /* Objective-Clean */ = {
@@ -432,21 +449,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if [[ -z ${SKIP_OBJCLEAN} || ${SKIP_OBJCLEAN} != 1 ]]; then\nif [[ -d \"${LOCAL_APPS_DIR}/Objective-Clean.app\" ]]; then\n\"${LOCAL_APPS_DIR}\"/Objective-Clean.app/Contents/Resources/ObjClean.app/Contents/MacOS/ObjClean \"${SRCROOT}\"\nelse\necho \"warning: You have to install and set up Objective-Clean to use its features!\"\nfi\nfi";
-		};
-		CA698DB4F523AF3BEB84D155 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -644,7 +646,7 @@
 		};
 		45161B7819AC876B10D0FA22 /* Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D8372E4D65FCAA4205681B0A /* Pods.staging.xcconfig */;
+			baseConfigurationReference = 4A8D2832179BD75DCD73B475 /* Pods-AutoLayoutDemo.staging.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COMPRESS_PNG_FILES = NO;
@@ -671,7 +673,7 @@
 		};
 		54CCDE121FC0076DC9F777EB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 59DE4CB40CD18E386307DE3B /* Pods.debug.xcconfig */;
+			baseConfigurationReference = BEFD45FD22EA862E3D11632F /* Pods-AutoLayoutDemo.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COMPRESS_PNG_FILES = NO;
@@ -779,7 +781,7 @@
 		};
 		F6E3D1BC2CF5F28EB3B89183 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C70EE12EC95E718290924C8F /* Pods.release.xcconfig */;
+			baseConfigurationReference = B0FA2681E1D5029802B2DE17 /* Pods-AutoLayoutDemo.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COMPRESS_PNG_FILES = NO;
