@@ -8,6 +8,9 @@
 
 import UIKit
 
+/**
+ * This tutorial will show the use of setting layout constraint priority values.
+ */
 class ALPromptViewController: UIViewController {
 
     @IBOutlet var cancelButton: UIButton!

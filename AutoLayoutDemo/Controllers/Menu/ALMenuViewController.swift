@@ -8,6 +8,9 @@
 
 import UIKit
 
+/**
+ * This tutorial is an example of a frequently create UI structure. A custom, dynamically sizing selection menu.
+ */
 class ALMenuViewController: UIViewController {
 
     @IBOutlet var menuContainerView: UIView!
