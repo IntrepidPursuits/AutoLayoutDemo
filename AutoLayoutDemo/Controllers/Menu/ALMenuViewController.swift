@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Intrepid
 
 /**
  * This tutorial is an example of a frequently create UI structure. A custom, dynamically sizing selection menu.
@@ -108,5 +109,24 @@ class ALMenuViewController: UIViewController {
 
     }
 
+    func constrainViewsUsingIntrepidWisdom() {
+        var preceedingView: UIView?
+        let detailViews = [view1, view2, view3]
 
+        for currentView in detailViews {
+            menuContainerView.constrainView(currentView, toInsets: UIEdgeInsets(top: 0.0, left: CGFloat(NSNotFound), bottom: 0.0, right: CGFloat(NSNotFound)))
+            if let preceedingView = preceedingView {
+                menuContainerView.constrainView(currentView, rightOfView: preceedingView)
+                menuContainerView.constrainView(currentView, toWidthOfView: preceedingView)
+            } else {
+                menuContainerView.constrainViewToLeft(currentView)
+            }
+            preceedingView = currentView
+        }
+        if let preceedingView = preceedingView {
+            menuContainerView.constrainViewToRight(preceedingView)
+        }
+
+    }
+    
 }
