@@ -1,0 +1,22 @@
+PODS:
+  - Intrepid (0.10.3):
+    - Intrepid/Core (= 0.10.3)
+  - Intrepid/Core (0.10.3):
+    - IP-UIKit-Wisdom (= 0.0.10)
+  - IP-UIKit-Wisdom (0.0.10)
+
+DEPENDENCIES:
+  - Intrepid (~> 0.10.3)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Intrepid
+    - IP-UIKit-Wisdom
+
+SPEC CHECKSUMS:
+  Intrepid: 9fd72a408dbee2d892b50044a380f15911ce92e6
+  IP-UIKit-Wisdom: b395a065344071b33659e5f6b918043a97c48a44
+
+PODFILE CHECKSUM: 7a8111f67801c2d91d75064cd89e9ed604fe3cb9
+
+COCOAPODS: 1.5.3

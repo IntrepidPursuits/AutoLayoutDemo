@@ -54,6 +54,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="containerView" destination="P1o-AG-k1X" id="CYK-sY-ipY"/>
                         <outlet property="view1" destination="p6o-R4-ODk" id="bgu-YS-Gij"/>
                         <outlet property="view2" destination="XfD-XS-qhe" id="MYe-cN-lay"/>
                         <outlet property="view3" destination="6Gh-Ge-MrN" id="yBy-ec-pRn"/>
