@@ -24,25 +24,37 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P1o-AG-k1X" userLabel="ContainerView">
                                 <rect key="frame" x="0.0" y="293" width="414" height="150"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p6o-R4-ODk" userLabel="view1">
-                                        <rect key="frame" x="18" y="19" width="102" height="113"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p6o-R4-ODk" userLabel="view1">
+                                        <rect key="frame" x="0.0" y="0.0" width="138" height="150"/>
                                         <color key="backgroundColor" red="0.82745098039999998" green="0.1843137255" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XfD-XS-qhe" userLabel="view2">
-                                        <rect key="frame" x="146" y="23" width="106" height="105"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XfD-XS-qhe" userLabel="view2">
+                                        <rect key="frame" x="138" y="0.0" width="138" height="150"/>
                                         <color key="backgroundColor" red="0.28627450980000002" green="0.18039215689999999" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="HYx-jI-Aia"/>
+                                        </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Gh-Ge-MrN" userLabel="view3">
-                                        <rect key="frame" x="280" y="16" width="102" height="118"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Gh-Ge-MrN" userLabel="view3">
+                                        <rect key="frame" x="276" y="0.0" width="138" height="150"/>
                                         <color key="backgroundColor" red="0.40784313729999999" green="0.14901960780000001" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.72549019609999998" green="0.83529411760000005" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstItem="XfD-XS-qhe" firstAttribute="bottom" secondItem="p6o-R4-ODk" secondAttribute="bottom" id="6JK-a9-spt"/>
+                                    <constraint firstItem="p6o-R4-ODk" firstAttribute="leading" secondItem="P1o-AG-k1X" secondAttribute="leading" id="BeS-n7-Oq4"/>
+                                    <constraint firstItem="6Gh-Ge-MrN" firstAttribute="top" secondItem="XfD-XS-qhe" secondAttribute="top" id="FUi-P3-mrM"/>
+                                    <constraint firstItem="p6o-R4-ODk" firstAttribute="top" secondItem="P1o-AG-k1X" secondAttribute="top" id="KG8-no-9TO"/>
                                     <constraint firstAttribute="height" constant="150" id="OD8-su-QYh"/>
+                                    <constraint firstAttribute="bottom" secondItem="p6o-R4-ODk" secondAttribute="bottom" id="Wz0-UB-toJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="6Gh-Ge-MrN" secondAttribute="trailing" id="bTy-Uq-IqR"/>
+                                    <constraint firstItem="6Gh-Ge-MrN" firstAttribute="leading" secondItem="XfD-XS-qhe" secondAttribute="trailing" id="dbw-lG-EMN"/>
+                                    <constraint firstItem="XfD-XS-qhe" firstAttribute="width" secondItem="p6o-R4-ODk" secondAttribute="width" priority="750" id="mEu-HU-3Tq"/>
+                                    <constraint firstItem="6Gh-Ge-MrN" firstAttribute="bottom" secondItem="XfD-XS-qhe" secondAttribute="bottom" id="mbh-jM-r5n"/>
+                                    <constraint firstItem="XfD-XS-qhe" firstAttribute="top" secondItem="p6o-R4-ODk" secondAttribute="top" id="n84-nx-GYz"/>
+                                    <constraint firstItem="XfD-XS-qhe" firstAttribute="leading" secondItem="p6o-R4-ODk" secondAttribute="trailing" id="qg4-jg-RA6"/>
+                                    <constraint firstItem="6Gh-Ge-MrN" firstAttribute="width" secondItem="p6o-R4-ODk" secondAttribute="width" id="tj9-8j-lAh"/>
                                 </constraints>
                             </view>
                         </subviews>
