@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="QxO-1e-wCa">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,25 +18,25 @@
                         <viewControllerLayoutGuide type="bottom" id="eSf-cn-Nek"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="U5q-eO-qoJ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CANCEL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jhb-Fj-JF8">
-                                <rect key="frame" x="15" y="323" width="162.5" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="CANCEL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jhb-Fj-JF8">
+                                <rect key="frame" x="15" y="229.5" width="102" height="21"/>
                                 <color key="backgroundColor" red="1" green="0.84469379194630867" blue="0.047740142620000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DONATION BY TEXT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohl-6I-C3a">
-                                <rect key="frame" x="197.5" y="323" width="162.5" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="DONATION BY TEXT" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohl-6I-C3a">
+                                <rect key="frame" x="137" y="229.5" width="168" height="21"/>
                                 <color key="backgroundColor" red="0.90588235289999997" green="0.48627450979999998" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8jp-LQ-3gS">
-                                <rect key="frame" x="124" y="561" width="127" height="30"/>
+                                <rect key="frame" x="96.5" y="374" width="127" height="30"/>
                                 <state key="normal" title="Toggle Text length"/>
                                 <connections>
                                     <action selector="toggleTextLength:" destination="QxO-1e-wCa" eventType="touchUpInside" id="ABV-Lr-PzB"/>
@@ -45,7 +45,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ohl-6I-C3a" firstAttribute="width" secondItem="Jhb-Fj-JF8" secondAttribute="width" id="4gT-PY-7kM"/>
+                            <constraint firstItem="ohl-6I-C3a" firstAttribute="width" secondItem="Jhb-Fj-JF8" secondAttribute="width" priority="999" id="4gT-PY-7kM"/>
                             <constraint firstAttribute="trailing" secondItem="ohl-6I-C3a" secondAttribute="trailing" constant="15" id="5us-Vq-HP6"/>
                             <constraint firstItem="Jhb-Fj-JF8" firstAttribute="leading" secondItem="U5q-eO-qoJ" secondAttribute="leading" constant="15" id="8wm-gq-bgO"/>
                             <constraint firstItem="8jp-LQ-3gS" firstAttribute="centerX" secondItem="U5q-eO-qoJ" secondAttribute="centerX" id="HWG-Wl-dlm"/>
