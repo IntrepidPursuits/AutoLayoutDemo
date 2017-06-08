@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         let window = UIWindow(frame: UIScreen.main.bounds)
-        let storyboard = UIStoryboard(name: "Prompt", bundle: nil)
+        let storyboard = UIStoryboard(name: "Menu", bundle: nil)
         let rootViewController = storyboard.instantiateInitialViewController()!
         window.rootViewController = rootViewController
         window.makeKeyAndVisible()

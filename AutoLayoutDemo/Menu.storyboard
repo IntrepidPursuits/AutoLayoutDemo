@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ncn-xc-rFn">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Auto Layout Demo-->
+        <scene sceneID="wQs-XB-cQL">
+            <objects>
+                <viewController id="ru9-Ie-t46" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="znW-yw-Ymd"/>
+                        <viewControllerLayoutGuide type="bottom" id="z1B-LI-DXx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="P4r-Py-mWc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ztG-eo-0CT">
+                                <rect key="frame" x="140" y="268.5" width="95" height="30"/>
+                                <state key="normal" title="Main Example"/>
+                                <connections>
+                                    <segue destination="bbJ-EZ-ZWE" kind="show" id="sge-XT-sSi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RjE-xY-CUI">
+                                <rect key="frame" x="131" y="368.5" width="113" height="30"/>
+                                <state key="normal" title="Prompt Example"/>
+                                <connections>
+                                    <segue destination="pnu-Ai-bte" kind="show" id="TwM-aQ-vp0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RjE-xY-CUI" firstAttribute="centerX" secondItem="P4r-Py-mWc" secondAttribute="centerX" id="0Jn-pc-XJa"/>
+                            <constraint firstItem="ztG-eo-0CT" firstAttribute="centerX" secondItem="P4r-Py-mWc" secondAttribute="centerX" id="TPF-eJ-qhS"/>
+                            <constraint firstItem="RjE-xY-CUI" firstAttribute="centerY" secondItem="P4r-Py-mWc" secondAttribute="centerY" constant="50" id="Zms-by-DuG"/>
+                            <constraint firstItem="ztG-eo-0CT" firstAttribute="centerY" secondItem="P4r-Py-mWc" secondAttribute="centerY" constant="-50" id="lCx-3Z-wgC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Auto Layout Demo" id="chK-A7-lRK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vnd-0c-NiN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2308" y="-236.13193403298354"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="rZM-bb-I2p">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="bbJ-EZ-ZWE" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XL0-Ct-WbJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2840" y="-374.21289355322341"/>
+        </scene>
+        <!--Prompt-->
+        <scene sceneID="zSM-ce-yLg">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Prompt" id="pnu-Ai-bte" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g4j-xu-6J9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2872.8000000000002" y="-151.12443778110946"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gf8-jL-2sN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ncn-xc-rFn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Be2-ka-nm2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ru9-Ie-t46" kind="relationship" relationship="rootViewController" id="ENC-fm-UZT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uON-Bj-Avx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1368.8" y="-236.13193403298354"/>
+        </scene>
+    </scenes>
+</document>

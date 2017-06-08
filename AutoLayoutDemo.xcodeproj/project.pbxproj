@@ -13,6 +13,7 @@
 		D92213091E26E5F200CEF2E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D92213071E26E5F200CEF2E3 /* Main.storyboard */; };
 		D922130B1E26E5F200CEF2E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D922130A1E26E5F200CEF2E3 /* Assets.xcassets */; };
 		D922130E1E26E5F200CEF2E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D922130C1E26E5F200CEF2E3 /* LaunchScreen.storyboard */; };
+		D9887DC71EE8F2CF00F4C483 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9887DC61EE8F2CF00F4C483 /* Menu.storyboard */; };
 		D9F5309C1E2730B300CC4E17 /* Prompt.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9F5309A1E2730B300CC4E17 /* Prompt.storyboard */; };
 		D9F5309E1E2735A900CC4E17 /* PromptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F5309D1E2735A900CC4E17 /* PromptViewController.swift */; };
 /* End PBXBuildFile section */
@@ -27,6 +28,7 @@
 		D922130A1E26E5F200CEF2E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D922130D1E26E5F200CEF2E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D922130F1E26E5F200CEF2E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9887DC61EE8F2CF00F4C483 /* Menu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
 		D9F5309B1E2730B300CC4E17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Prompt.storyboard; sourceTree = "<group>"; };
 		D9F5309D1E2735A900CC4E17 /* PromptViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromptViewController.swift; sourceTree = "<group>"; };
 		FAB2C044300EC983D10457D3 /* Pods-AutoLayoutDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoLayoutDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AutoLayoutDemo/Pods-AutoLayoutDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				D92213031E26E5F200CEF2E3 /* AppDelegate.swift */,
 				D92213051E26E5F200CEF2E3 /* ViewController.swift */,
 				D9F5309D1E2735A900CC4E17 /* PromptViewController.swift */,
+				D9887DC61EE8F2CF00F4C483 /* Menu.storyboard */,
 				D92213071E26E5F200CEF2E3 /* Main.storyboard */,
 				D9F5309A1E2730B300CC4E17 /* Prompt.storyboard */,
 				D922130A1E26E5F200CEF2E3 /* Assets.xcassets */,
@@ -157,6 +160,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9887DC71EE8F2CF00F4C483 /* Menu.storyboard in Resources */,
 				D922130E1E26E5F200CEF2E3 /* LaunchScreen.storyboard in Resources */,
 				D922130B1E26E5F200CEF2E3 /* Assets.xcassets in Resources */,
 				D9F5309C1E2730B300CC4E17 /* Prompt.storyboard in Resources */,
