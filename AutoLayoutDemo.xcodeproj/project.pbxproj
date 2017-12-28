@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57F89CFC1FF597850062D291 /* TableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57F89CFE1FF597850062D291 /* TableView.storyboard */; };
+		57F89D001FF597E50062D291 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F89CFF1FF597E50062D291 /* TableViewController.swift */; };
+		57F89D021FF598E90062D291 /* ExampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F89D011FF598E90062D291 /* ExampleTableViewCell.swift */; };
 		9EA22CB4509CC637505A3A3E /* Pods_AutoLayoutDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 343241EA2FF55EE775731348 /* Pods_AutoLayoutDemo.framework */; };
 		D92213041E26E5F200CEF2E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92213031E26E5F200CEF2E3 /* AppDelegate.swift */; };
 		D92213061E26E5F200CEF2E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92213051E26E5F200CEF2E3 /* ViewController.swift */; };
@@ -20,6 +23,9 @@
 
 /* Begin PBXFileReference section */
 		343241EA2FF55EE775731348 /* Pods_AutoLayoutDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoLayoutDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57F89CFD1FF597850062D291 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TableView.storyboard; sourceTree = "<group>"; };
+		57F89CFF1FF597E50062D291 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		57F89D011FF598E90062D291 /* ExampleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTableViewCell.swift; sourceTree = "<group>"; };
 		B5BB70BCBB87F70A316A6B1F /* Pods-AutoLayoutDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoLayoutDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AutoLayoutDemo/Pods-AutoLayoutDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		D92213001E26E5F200CEF2E3 /* AutoLayoutDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoLayoutDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D92213031E26E5F200CEF2E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,9 +92,12 @@
 			children = (
 				D92213031E26E5F200CEF2E3 /* AppDelegate.swift */,
 				D92213051E26E5F200CEF2E3 /* ViewController.swift */,
+				57F89CFF1FF597E50062D291 /* TableViewController.swift */,
+				57F89D011FF598E90062D291 /* ExampleTableViewCell.swift */,
 				D9F5309D1E2735A900CC4E17 /* PromptViewController.swift */,
 				D9887DC61EE8F2CF00F4C483 /* Menu.storyboard */,
 				D92213071E26E5F200CEF2E3 /* Main.storyboard */,
+				57F89CFE1FF597850062D291 /* TableView.storyboard */,
 				D9F5309A1E2730B300CC4E17 /* Prompt.storyboard */,
 				D922130A1E26E5F200CEF2E3 /* Assets.xcassets */,
 				D922130C1E26E5F200CEF2E3 /* LaunchScreen.storyboard */,
@@ -160,6 +169,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57F89CFC1FF597850062D291 /* TableView.storyboard in Resources */,
 				D9887DC71EE8F2CF00F4C483 /* Menu.storyboard in Resources */,
 				D922130E1E26E5F200CEF2E3 /* LaunchScreen.storyboard in Resources */,
 				D922130B1E26E5F200CEF2E3 /* Assets.xcassets in Resources */,
@@ -234,12 +244,22 @@
 				D9F5309E1E2735A900CC4E17 /* PromptViewController.swift in Sources */,
 				D92213061E26E5F200CEF2E3 /* ViewController.swift in Sources */,
 				D92213041E26E5F200CEF2E3 /* AppDelegate.swift in Sources */,
+				57F89D001FF597E50062D291 /* TableViewController.swift in Sources */,
+				57F89D021FF598E90062D291 /* ExampleTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		57F89CFE1FF597850062D291 /* TableView.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				57F89CFD1FF597850062D291 /* Base */,
+			);
+			name = TableView.storyboard;
+			sourceTree = "<group>";
+		};
 		D92213071E26E5F200CEF2E3 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
