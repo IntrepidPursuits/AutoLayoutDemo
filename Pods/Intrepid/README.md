@@ -1,9 +1,16 @@
-[![Build Status](http://ci.intrepid.io:8080/buildStatus/icon?job=Swift Wisdom)](http://ci.intrepid.io:8080/job/Swift%20Wisdom/)
-[![Coverage](http://ci.intrepid.io:9913/jenkins/cobertura/Swift%20Wisdom/)](http://ci.intrepid.io:8080/job/Swift%20Wisdom/cobertura/)
+[![Build Status](https://ci.intrepid.io/buildStatus/icon?job=iOS/ios-pipeline/swift-wisdom/master)](https://ci.intrepid.io/job/iOS/job/ios-pipeline/job/swift-wisdom/job/master/)
+[![SonarQube](https://img.shields.io/badge/Metrics-SonarQube-blue.svg)](https://sonar.intrepid.io/dashboard?id=SwiftWisdom%3Aios)
+
 
 This library is meant to be a general grab bag of Swift methods made by the engineers at IntrepidPursuits.  As this library goes, useful components will be isolated into separate podspecs where appropriate.
 
 The reason for the grab bag approach is to make it easier to facilitate the adding of materials and encourage componentization and sharing of common functionality.
+
+### Swift Versions
+- Swift 4.0 -> `0.9.0` +
+- Swift 3.2 (Xcode 9 Compatible) -> `0.8.3` through `0.8.4`
+- Swift 3 -> `0.6.1` through `0.8.1`
+- Swift 2 -> anything through `0.5.2`
 
 ### Core
 
@@ -20,8 +27,8 @@ pod 'Intrepid/Rx' # Intrepid's RxSwift Extensions
 ### Testing Additions
 
 ```Ruby
-source 'https://github.com/IntrepidPursuits/intrepid-wisdom.git'
-target 'SwiftWisdomTests',
+source 'https://github.com/IntrepidPursuits/swift-wisdom.git'
+target 'YourTestTarget',
     use_frameworks!
     pod 'IntrepidSwiftWisdomTesting'
 end
@@ -45,27 +52,27 @@ A basic wrapper for dispatch operations in Swift.  Syntax example:
     Qu.Background {
         // Sleep for long operation
         sleep(4)
-        log("1")
+        print("1")
     } .Also {
         sleep(4)
-        log("2")
+        print("2")
     } .Also {
         sleep(1)
-        log("3")
+        print("3")
     } .Also {
         sleep(1)
-        log("4")
+        print("4")
     } .Also {
         sleep(1)
-        log("5")
-    } .ThenAfter(.Previous(3)) {
-        log("6: After 5, 4, & 3")
+        print("5")
+    } .ThenAfter(.previous(3)) {
+        print("6: After 5, 4, & 3")
     } .Then {
         sleep(1)
-        log("7: After 6")
-    } .FinallyOn(.Main) {
+        print("7: After 6")
+    } .FinallyOn(.main) {
         sleep(1)
-        log("Finished: After All")
+        print("Finished: After All")
     }
 ```
 

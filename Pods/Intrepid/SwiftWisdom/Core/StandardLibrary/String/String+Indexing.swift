@@ -3,20 +3,55 @@ import Foundation
 extension String {
 
     public subscript(range: Range<Int>) -> String {
-        let chars = Array(characters)
-        let substringCharacters = chars[range]
-        return String(substringCharacters)
+        let lowerBound = index(startIndex, offsetBy: range.lowerBound)
+        let upperBound = index(startIndex, offsetBy: range.upperBound)
+        let indexRange = lowerBound..<upperBound
+        return String(self[indexRange])
+    }
+
+    public subscript(range: CountableRange<Int>) -> String {
+        let lowerBound = index(startIndex, offsetBy: range.lowerBound)
+        let upperBound = index(startIndex, offsetBy: range.upperBound)
+        let indexRange = lowerBound..<upperBound
+        return String(self[indexRange])
     }
 
     public subscript(range: CountableClosedRange<Int>) -> String {
-        let chars = Array(characters)
-        let substringCharacters = chars[range]
-        return String(substringCharacters)
+        let lowerBound = index(startIndex, offsetBy: range.lowerBound)
+        let upperBound = index(startIndex, offsetBy: range.upperBound)
+        let indexRange = lowerBound...upperBound
+        return String(self[indexRange])
+    }
+
+    /// Returns a substring in the given range.
+    /// If the range is beyond the string's length, returns the substring up to its bounds.
+    public subscript(ip_safely range: Range<Int>) -> String {
+        if range.lowerBound < 0 {
+            return self[ip_safely: 0..<range.upperBound]
+        } else if range.upperBound > count {
+            let newRange = range.lowerBound..<count
+            return String(self[newRange])
+        } else {
+            return String(self[range])
+        }
+    }
+
+    /// Returns a substring in the given range.
+    /// If the range is beyond the string's length, returns the substring up to its bounds.
+    public subscript(ip_safely range: CountableClosedRange<Int>) -> String {
+        if range.lowerBound < 0 {
+            return self[ip_safely: 0...range.upperBound]
+        } else if range.upperBound >= count {
+            let newRange = range.lowerBound...(count - 1)
+            return String(self[newRange])
+        } else {
+            return String(self[range])
+        }
     }
 
     public mutating func ip_dropFirst() {
         guard !isEmpty else { return }
-        self = self[1..<characters.count]
+        self = self[1..<count]
     }
 
     /// From http://stackoverflow.com/questions/25138339/nsrange-to-rangestring-index/32379600#32379600
@@ -36,7 +71,6 @@ extension String {
         return from..<to
     }
 
-
     /// Returns a String range based on an Int range. It is up to the caller to ensure that the
     /// int range is not out of bounds.
     ///
@@ -50,6 +84,21 @@ extension String {
     }
 
     public var ip_fullrange: NSRange {
-        return NSRange(location: 0, length: ip_length);
+        return NSRange(location: 0, length: ip_length)
     }
+
+    /// Returns a new string containing the characters of the String up to, but not including, the first occurrence of the given string.
+    /// If the string is not found, nil is returned.
+    public func ip_prefix(upTo string: String) -> String? {
+        guard let range = self.range(of: string) else { return nil }
+        return String(self[..<range.lowerBound])
+    }
+
+    /// Returns a new string containing the characters of the String from the end of the first occurrence of the given String.
+    /// If the string is not found, nil is returned.
+    public func ip_suffix(from string: String) -> String? {
+        guard let range = self.range(of: string) else { return nil }
+        return String(self[range.upperBound...])
+    }
+
 }

@@ -12,22 +12,24 @@ import Foundation
  *  A struct represention of dates expressed as a time of day.
  */
 public struct TimeOfDay {
-    
+
     // MARK: Public Properties
-    
+
     public let hours: Int
     public let minutes: Int
-    
+
     public var displayFormat: String = "h:mm a" // 9:18 am
-    
+
     // MARK: Readonly
-    
+
     public var stringRepresentation: String {
         var stringRepresentation = hours < 10 ? "0" : ""
-        stringRepresentation += "\(hours):\(minutes)"
+        stringRepresentation += "\(hours):"
+        stringRepresentation += (minutes < 10) ? "0" : ""
+        stringRepresentation += "\(minutes)"
         return stringRepresentation
     }
-    
+
     public var displayString: String {
         // Backing Format
         dateFormatter.dateFormat = "HH:mm"
@@ -39,16 +41,16 @@ public struct TimeOfDay {
         dateFormatter.dateFormat = displayFormat
         return dateFormatter.string(from: date)
     }
-    
+
     private let dateFormatter: DateFormatter = {
         let dateFormatter = DateFormatter()
         dateFormatter.timeZone = .autoupdatingCurrent
         dateFormatter.locale = .current
         return dateFormatter
     }()
-    
+
     // MARK: Initialization
-    
+
     public init?(_ stringRepresentation: String) {
         guard let (hours, minutes) = stringRepresentation.ip_hoursAndMinutes() else {
             return nil
@@ -56,7 +58,7 @@ public struct TimeOfDay {
         self.hours = hours
         self.minutes = minutes
     }
-    
+
     public init?(_ date: Date) {
         dateFormatter.dateFormat = "HH:mm"
         let formattedStringRepresentation = dateFormatter.string(from: date)
@@ -66,13 +68,13 @@ public struct TimeOfDay {
         self.hours = hours
         self.minutes = minutes
     }
-    
+
     // MARK: Date Conversion
-    
+
     public func timeToday() -> Date? {
         return timeOnDate(Date())
     }
-    
+
     public func timeOnDate(_ date: Date) -> Date? {
         let calendar = Calendar.current
         var dateComponents = calendar.dateComponents([.year, .month, .day, .hour, .minute], from: date)
@@ -80,7 +82,7 @@ public struct TimeOfDay {
         dateComponents.minute = minutes
         return calendar.date(from: dateComponents)
     }
-    
+
 }
 
 private extension String {
