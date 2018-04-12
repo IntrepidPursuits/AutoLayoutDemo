@@ -10,7 +10,6 @@
 		57F89CFC1FF597850062D291 /* TableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57F89CFE1FF597850062D291 /* TableView.storyboard */; };
 		57F89D001FF597E50062D291 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F89CFF1FF597E50062D291 /* TableViewController.swift */; };
 		57F89D021FF598E90062D291 /* ExampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F89D011FF598E90062D291 /* ExampleTableViewCell.swift */; };
-		9EA22CB4509CC637505A3A3E /* Pods_AutoLayoutDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 343241EA2FF55EE775731348 /* Pods_AutoLayoutDemo.framework */; };
 		D92213041E26E5F200CEF2E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92213031E26E5F200CEF2E3 /* AppDelegate.swift */; };
 		D92213061E26E5F200CEF2E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92213051E26E5F200CEF2E3 /* ViewController.swift */; };
 		D92213091E26E5F200CEF2E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D92213071E26E5F200CEF2E3 /* Main.storyboard */; };
@@ -22,11 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		343241EA2FF55EE775731348 /* Pods_AutoLayoutDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoLayoutDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57F89CFD1FF597850062D291 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TableView.storyboard; sourceTree = "<group>"; };
 		57F89CFF1FF597E50062D291 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		57F89D011FF598E90062D291 /* ExampleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTableViewCell.swift; sourceTree = "<group>"; };
-		B5BB70BCBB87F70A316A6B1F /* Pods-AutoLayoutDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoLayoutDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AutoLayoutDemo/Pods-AutoLayoutDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		D92213001E26E5F200CEF2E3 /* AutoLayoutDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoLayoutDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D92213031E26E5F200CEF2E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D92213051E26E5F200CEF2E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,7 +34,6 @@
 		D9887DC61EE8F2CF00F4C483 /* Menu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
 		D9F5309B1E2730B300CC4E17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Prompt.storyboard; sourceTree = "<group>"; };
 		D9F5309D1E2735A900CC4E17 /* PromptViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromptViewController.swift; sourceTree = "<group>"; };
-		FAB2C044300EC983D10457D3 /* Pods-AutoLayoutDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoLayoutDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AutoLayoutDemo/Pods-AutoLayoutDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,37 +41,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9EA22CB4509CC637505A3A3E /* Pods_AutoLayoutDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7792995392A45F8C10BE862E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				343241EA2FF55EE775731348 /* Pods_AutoLayoutDemo.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		A33C867EB6F3F8179F9AF12F /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B5BB70BCBB87F70A316A6B1F /* Pods-AutoLayoutDemo.debug.xcconfig */,
-				FAB2C044300EC983D10457D3 /* Pods-AutoLayoutDemo.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		D92212F71E26E5F200CEF2E3 = {
 			isa = PBXGroup;
 			children = (
 				D92213021E26E5F200CEF2E3 /* AutoLayoutDemo */,
 				D92213011E26E5F200CEF2E3 /* Products */,
-				A33C867EB6F3F8179F9AF12F /* Pods */,
-				7792995392A45F8C10BE862E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,12 +89,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D92213121E26E5F200CEF2E3 /* Build configuration list for PBXNativeTarget "AutoLayoutDemo" */;
 			buildPhases = (
-				6AE63398C53548239905E218 /* [CP] Check Pods Manifest.lock */,
 				D92212FC1E26E5F200CEF2E3 /* Sources */,
 				D92212FD1E26E5F200CEF2E3 /* Frameworks */,
 				D92212FE1E26E5F200CEF2E3 /* Resources */,
-				2BAFEAF6B62F0A15299AFE4F /* [CP] Embed Pods Frameworks */,
-				F85FF2E500D6803F2C27D4CC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -179,62 +152,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		2BAFEAF6B62F0A15299AFE4F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-AutoLayoutDemo/Pods-AutoLayoutDemo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/IP-UIKit-Wisdom/IP_UIKit_Wisdom.framework",
-				"${BUILT_PRODUCTS_DIR}/Intrepid/Intrepid.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IP_UIKit_Wisdom.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Intrepid.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AutoLayoutDemo/Pods-AutoLayoutDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6AE63398C53548239905E218 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AutoLayoutDemo-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F85FF2E500D6803F2C27D4CC /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AutoLayoutDemo/Pods-AutoLayoutDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D92212FC1E26E5F200CEF2E3 /* Sources */ = {
@@ -396,7 +313,6 @@
 		};
 		D92213131E26E5F200CEF2E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B5BB70BCBB87F70A316A6B1F /* Pods-AutoLayoutDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = THP5EV5EJ9;
@@ -410,7 +326,6 @@
 		};
 		D92213141E26E5F200CEF2E3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FAB2C044300EC983D10457D3 /* Pods-AutoLayoutDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = THP5EV5EJ9;
