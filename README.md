@@ -6,18 +6,26 @@ These cases are a little contrived as you could use a UIStackView to accomplish 
 - Layout with IB first
 - Then try adding constraints using code.
 
+<img src="./images/rectangles-portrait.png" width="225">
+
+<img src="./images/rectangles-landscape.png" height="225">
+
 ## Prompt Buttons
-**Story:** "For _Donation By Text_ button, if there is no more space, have the text expand into multiple lines if needed."
+**Story:** "For _Donation By Text_ button, if there is no more space, have the text expand into multiple lines if needed." Then have the cancel button shrink up until the text.
 - Layout with IB using hugging/compression
+
+<img src="./images/prompt-done.png" width="225"> <img src="./images/prompt-done-expanded.png" width="225">
 
 ## TableViewCells
 As of iOS9, UITableViewCells can size themselves based on constraints.
 
-**Story:** "Show all the _mainText_ in the cells, expanding them and contracting when necessary, but always show the image at 100 points wide."
+**Story:** "Show all the _mainText_ in the cells, expanding them and contracting when necessary, but always show the image at 100 x 100."
 - Layout with IB
   - Use margins when needed (be sure to check iPhone X landscape views).
   - Use inequalities when needed.
   - Try aligning edges.
+
+<img src="./images/tableview-done.png" width="225">
 
 ## Answers
 You can use these code samples as a guide or reference if needed:
