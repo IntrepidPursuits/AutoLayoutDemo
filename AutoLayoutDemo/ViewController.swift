@@ -18,5 +18,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
 
+    @IBAction func openLayoutAnchorsExample(_ sender: UIButton) {
+        let anchorsViewController = AnchorsViewController()
+        navigationController?.pushViewController(anchorsViewController, animated: true)
+    }
 }
-

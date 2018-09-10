@@ -27,6 +27,28 @@ As of iOS9, UITableViewCells can size themselves based on constraints.
 
 <img src="./images/tableview-done.png" width="225">
 
+## Layout Anchors
+
+**Story:** "Show all the _Squares_ in the view, with the following sizes and margins"
+
+- Top Left:
+    - Height & width: 100
+    - left margin: 8
+- Top Right:
+    - Height & width: 40
+    - top margin: 10
+- Bottom Left:
+    - Height & width: 70
+    - bottom margin: 30
+- Bottom Right:
+    - Height & width: 23
+    - right margin: 10
+
+- Layout with programmatic layout anchors
+- Use margins when needed (be sure to check iPhone X portrait views).
+
+<img src="./images/layout-anchors-done.png" width="225">
+
 ## Answers
 You can use these code samples as a guide or reference if needed:
 
@@ -36,3 +58,4 @@ You can use these code samples as a guide or reference if needed:
 4. [answer/prompt-hugging-compression](https://github.com/IntrepidPursuits/AutoLayoutDemo/tree/answer/prompt-hugging-compression)
 5. [answer/prompt-multiple-lines](https://github.com/IntrepidPursuits/AutoLayoutDemo/tree/answer/prompt-multiple-lines)
 6. [answer/tableviewcell-layout](https://github.com/IntrepidPursuits/AutoLayoutDemo/tree/answer/tableviewcell-layout)
+7. [answer/layout-anchors-programmatic](https://github.com/IntrepidPursuits/AutoLayoutDemo/tree/answer/layout-anchors-programmatic)
