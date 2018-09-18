@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
 
     @IBOutlet weak var view1: UIView!
     @IBOutlet weak var view2: UIView!
@@ -16,10 +16,5 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-
-    @IBAction func openLayoutAnchorsExample(_ sender: UIButton) {
-        let anchorsViewController = AnchorsViewController()
-        navigationController?.pushViewController(anchorsViewController, animated: true)
     }
 }

@@ -12,7 +12,7 @@
         <!--Auto Layout Demo-->
         <scene sceneID="wQs-XB-cQL">
             <objects>
-                <viewController id="ru9-Ie-t46" customClass="ViewController" customModule="AutoLayoutDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ru9-Ie-t46" customClass="MenuViewController" customModule="AutoLayoutDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="znW-yw-Ymd"/>
                         <viewControllerLayoutGuide type="bottom" id="z1B-LI-DXx"/>
